@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Nice Shop</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="goToCheckout()">Checkout</button>
+  <hr>
+  <button ion-button (click)="buyProduct({name: 'Milk', quantity: 2})">Milk</button>
+  <button ion-button (click)="buyProduct({name: 'Beer', quantity: 1})">Beer</button>
+  <button ion-button (click)="buyProduct({name: 'Bread', quantity: 3})">Bread</button>
+</ion-content>
