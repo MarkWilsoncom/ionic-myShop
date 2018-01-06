@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CheckoutPage } from './checkout/checkout';
+import { ProductData } from '../../common/productData';
 
 @Component({
   selector: 'page-shop',
@@ -15,7 +16,7 @@ export class ShopPage {
   }
 
   // ProductData - object with two fields.
-  buyProduct(productData: {name: string, quatity: number}) {
+  buyProduct(productData: ProductData) {
     this.navCtrl.push(CheckoutPage, productData);
   }
 }

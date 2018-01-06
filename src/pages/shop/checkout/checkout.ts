@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NavParams } from 'ionic-angular';
+import { ProductData } from '../../../common/productData';
 
 @Component({
   selector: 'page-checkout',
@@ -8,7 +9,7 @@ import { NavParams } from 'ionic-angular';
 })
 export class CheckoutPage implements OnInit {
 
-  productData: {name: string, quantity: number};
+  productData: ProductData;
 
   ngOnInit(): void {
     this.productData = this.navParams.data;
